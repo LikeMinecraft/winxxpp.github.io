@@ -26,7 +26,7 @@
         <ul>
             <li>Email: l759486@163.com</li>
             <li>GitHub: LikeMinecraft</li>
-            <li>bilibili: winxxp</li>
+            <li>bilibili: winxxpp</li>
             <!-- 更多联系方式 -->
         </ul>
     </section>
@@ -35,5 +35,29 @@
     <footer>
         <p>版权所有 &copy; 2024 我的博客</p>
     </footer>
+     <!-- 视频元素 -->
+     <video id="myVideo" width="320" height="240" controls>
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- 超链接 -->
+    <a href="#" onclick="playVideo()">点击这里播放视频</a>
+
+    <script>
+        // 获取视频元素
+        var video = document.getElementById('myVideo');
+
+        // 定义播放视频的函数
+        function playVideo() {
+            // 调用play方法播放视频
+            video.play();
+            // 阻止链接默认的导航行为
+            return false;
+        }
+    </script>
+    </video>
+
+    
 </body>
 </html>
